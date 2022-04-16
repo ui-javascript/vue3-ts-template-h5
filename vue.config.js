@@ -17,6 +17,9 @@ function resolve(dir) {
 const autoprefixer = require("autoprefixer");
 module.exports = {
   parallel: false,
+  devServer: {
+    disableHostCheck: true,
+  },
   css: {
     loaderOptions: {
       //配置less主题
